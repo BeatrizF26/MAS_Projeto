@@ -1,0 +1,368 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Bolos Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="personalizados.css">
+    <link rel="stylesheet" href="carrinho.css" />
+    <style>
+        .fixed-image {
+            position: fixed;
+            top: 3px; /* Ajuste conforme necessário */
+            left: 0;
+            z-index: 1000; /* Ajuste conforme necessário */
+        }
+
+        .stop-fixed {
+            position: static !important; /* Define a posição da imagem como estática */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="py-1 mb-1">
+        <p>
+
+        </p>
+        <h1 data-bind="text:displayName">Bolos Personalizados</h1>
+    </div>
+    <main>
+        <div class="container3">
+            <div class="left-section">
+                <div class="image-section">
+                    <img src="Imagens/imagem-bolo.jpeg" alt="Bolo Personalizado" class="fixed-image stop-fixed">
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="options">
+                    <h2>Personalize o seu Bolo</h2><br />
+                    <div class="option">
+                        <label for="confeitarias"><h5>Escolha uma confeitaria:</h5></label>
+                        <select id="confeitarias">
+                            <option>Escolha uma opção</option>
+                            <option value="Doce Paladar">Doce Paladar</option>
+                            <option value="Mundo dos Bolos">Mundo dos Bolos</option>
+                            <option value="Pastelaria Encantada">Pastelaria Encantada</option>
+                            <option value="Fornada Mágica">Fornada Mágica</option>
+                            <option value="Doce Tentação">Doce Tentação</option>
+                            <option value="Fábrica de Bolos">Fábrica de Bolos</option>
+                            <option value="Sabor Divino">Sabor Divino</option>
+                            <option value="Delícias da Padaria">Delícias da Padaria</option>
+                            <option value="Forno de Sabores">Forno de Sabores</option>
+                            <option value="Sabor & Arte">Sabor & Arte</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="confeitarias"><h5>Peso:</h5></label>
+                        <select id="peso">
+                            <option>Escolha uma opção</option>
+                            <option value="1kg">1kg</option>
+                            <option value="1,5kg">1,5kg</option>
+                            <option value="2kg">2kg</option>
+                            <option value="2,5kg">2,5kg</option>
+                            <option value="3kg">3kg</option>
+                            <option value="3,5kg">3,5kg</option>
+                            <option value="4kg">4kg</option>
+                            <option value="4,5kg">4,5kg</option>
+                            <option value="5kg">5kg</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="formato"><h5>Formato:</h5></label>
+                        <select id="formato">
+                            <option>Escolha uma opção</option>
+                            <option value="Redondo">Redondo</option>
+                            <option value="Quadrado">Quadrado</option>
+                            <option value="Retangular">Retangular</option>
+                            <option value="Coração">Coração</option>
+                            <option value="Estrela">Estrela</option>
+                            <option value="Letra">Letra</option>
+                            <option value="Número">Número</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="massa"><h5>Massa:</h5></label>
+                        <select id="massa">
+                            <option>Escolha uma opção</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Baunilha">Baunilha</option>
+                            <option value="Pão de ló">Pão de ló</option>
+                            <option value="Red Velvet">Red Velvet</option>
+                            <option value="Massa Folhada">Massa Folhada</option>
+                            <option value="Brigadeiro">Brigadeiro</option>
+                            <option value="Amêndoa">Amêndoa</option>
+                            <option value="Morango">Morango</option>
+                            <option value="Maçã">Maçã</option>
+                            <option value="Laranja">Laranja</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="recheio"><h5>Recheio:</h5></label>
+                        <select id="recheio">
+                            <option>Escolha uma opção</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Chocolate branco">Chocolate Branco</option>
+                            <option value="Chantilly">Chantilly</option>
+                            <option value="Caramelo">Caramelo</option>
+                            <option value="Doce de Leite">Doce de Leite</option>
+                            <option value="Ganache">Ganache</option>
+                            <option value="Nenhum">Nenhum</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="mistura"><h5>Mistura:</h5></label>
+                        <select id="mistura">
+                            <option>Escolha uma opção</option>
+                            <option value="Ananás">Ananás</option>
+                            <option value="Amêndoa">Amêndoa</option>
+                            <option value="Amêndoa e canela">Amêndoa e canela</option>
+                            <option value="Canela">Canela</option>
+                            <option value="Nozes">Nozes</option>
+                            <option value="Geleia de Morango">Geleia de Morango</option>
+                            <option value="Nenhuma">Nenhuma</option>
+                        </select>
+                    </div><br />
+                    <h4>Personaliação do topo</h4><br />
+                    <div class="option">
+                        <label for="mensagem"><h5>Frase (Opcional):</h5></label>
+                        <input type="text" id="mensagem" placeholder="Ex: Parabéns Carolina">
+                    </div>
+                    <div class="option">
+                        <label for="mensagem"><h5>Idade (Opcional):</h5></label>
+                        <input type="text" id="mensagem" placeholder="Ex: 25">
+                    </div>
+                    <div class="option">
+                        <label for="velas"><h5>Escolha o número das velas:</h5></label><p style="color: #A0A0A0;">Velas tradicionais são grátis, as prateadas e douradas acrescentam 3.90 ao valor final.</p>
+                        <div class="candle-images">
+                            <img src="Imagens/X.png" alt="Imagem 1" data-value="0" id="candleImg0">
+                            <img src="Imagens/velas_normais.jpeg" alt="Imagem 2" data-value="1" id="candleImg1">
+                            <img src="Imagens/velas_prateadas.jpeg" alt="Imagem 3" data-value="2" id="candleImg2">
+                            <img src="Imagens/velas_douradas.jpeg" alt="Imagem 4" data-value="3" id="candleImg3">
+                        </div>
+                        <input type="hidden" id="selectedCandle" name="selectedCandle" value=""><br />
+                        <div class="checkbox-group">
+                            <div class="left-checkboxes">
+                                <input type="checkbox" id="zero" name="velas" value="0">
+                                <label for="zero">0</label><br>
+                                <input type="checkbox" id="um" name="velas" value="1">
+                                <label for="um">1</label><br>
+                                <input type="checkbox" id="dois" name="velas" value="2">
+                                <label for="dois">2</label><br>
+                                <input type="checkbox" id="tres" name="velas" value="3">
+                                <label for="tres">3</label><br>
+                                <input type="checkbox" id="quatro" name="velas" value="4">
+                                <label for="quatro">4</label><br>
+                            </div>
+                            <div class="right-checkboxes">
+                                <input type="checkbox" id="cinco" name="velas" value="5">
+                                <label for="cinco">5</label><br>
+                                <input type="checkbox" id="seis" name="velas" value="6">
+                                <label for="seis">6</label><br>
+                                <input type="checkbox" id="sete" name="velas" value="7">
+                                <label for="sete">7</label><br>
+                                <input type="checkbox" id="oito" name="velas" value="8">
+                                <label for="oito">8</label><br>
+                                <input type="checkbox" id="nove" name="velas" value="9">
+                                <label for="nove">9</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="extras"><h5>Escolha Extras:</h5></label><p style="color: #A0A0A0;">A adição de extras acrescenta 1.90€ ao valor final.</p>
+                    <div class="custom-checkbox-group">
+                        <div class="left-checkboxes">
+                            <input type="checkbox" id="elemento1" name="elementos" value="Elemento 1">
+                            <label for="elemento1">Amêndoas</label><br>
+                            <input type="checkbox" id="elemento2" name="elementos" value="Elemento 2">
+                            <label for="elemento2">Granulado Colorido</label><br>
+                            <input type="checkbox" id="elemento3" name="elementos" value="Elemento 3">
+                            <label for="elemento3">Raspas de Chocolate Negro</label><br>
+                            <input type="checkbox" id="elemento4" name="elementos" value="Elemento 4">
+                            <label for="elemento4">Raspas de Chocolate Normal </label><br>
+                            <input type="checkbox" id="elemento5" name="elementos" value="Elemento 5">
+                            <label for="elemento5">Raspas de Chocolate Branco</label><br>
+                        </div>
+                        <div class="right-checkboxes">
+                            <input type="checkbox" id="elemento6" name="elementos" value="Elemento 6">
+                            <label for="elemento6">Côco Rlado</label><br>
+                            <input type="checkbox" id="elemento7" name="elementos" value="Elemento 7">
+                            <label for="elemento7">Nozes</label><br>
+                            <input type="checkbox" id="elemento8" name="elementos" value="Elemento 8">
+                            <label for="elemento8">Ananás</label><br>
+                            <input type="checkbox" id="elemento9" name="elementos" value="Elemento 9">
+                            <label for="elemento9">Smarties</label><br>
+                            <input type="checkbox" id="elemento10" name="elementos" value="Elemento 10">
+                            <label for="elemento10">Kit Kat</label><br>
+                        </div>
+                    </div><br />
+
+                    <div class="option">
+                        <label for="foguetes"><h5>Foguetes?</h5></label><p style="color: #A0A0A0;">Uma embalagem com 3 foguetes acrescenta 4.50€ ao valor final.</p>
+                        <div class="checkbox-group">
+                            <div class="left-checkboxes">
+                                <input type="radio" id="Sim" name="foguetes" value="Sim">
+                                <label for="Sim">Sim</label><br>
+                                <input type="radio" id="Não" name="foguetes" value="Não">
+                                <label for="Não">Não</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <label for="comment"><h5>Nota ao Confeiteiro:</h5></label>
+                        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Ex: Quero que o bolo seja revestido por chocalate."></textarea>
+                    </div><br />
+                    <hr class="divider">
+                    <div class="subtotal-section">
+                        <h3>Subtotal:</h3>
+                        <div class="flex-container">
+                            <span class="price-box" id="pricebox">0.00€</span>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <button id="addToCartBtn" onclick="addToCart()">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="py-1 mb-1">
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+
+            </p>
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="m-header">Adicionado ao carrinho</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body mt-2 mb-2">
+                <p id="m-body">O seu bolo personalizado foi adicionado ao carrinho</p>
+            </div>
+            <div class="modal-footer">
+                <h3 id="m-footer" style="height:25px;"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="carrinho.js"></script>
+    <script src="personalizados.js"></script>
+    <script>const candleImages = document.querySelectorAll('.candle-images img');
+        const selectedCandleInput = document.getElementById('selectedCandle');
+
+        candleImages.forEach(img => {
+            img.addEventListener('click', function () {
+                candleImages.forEach(image => image.classList.remove('selected'));
+                this.classList.add('selected');
+                selectedCandleInput.value = this.getAttribute('data-value');
+            });
+        });
+
+        window.addEventListener('scroll', function () {
+            let image = document.querySelector('.fixed-image');
+            let main = document.querySelector('main');
+            let imageBottom = image.offsetTop + image.offsetHeight; // Posição inferior da imagem
+            let mainBottom = main.offsetTop + main.offsetHeight; // Posição inferior da seção main
+            let scrollPosition = window.scrollY + window.innerHeight; // Posição atual de rolagem + altura da janela
+
+            // Verifica se a posição de rolagem é maior que a posição inferior da imagem e menor que a posição inferior da seção main
+            if (scrollPosition > imageBottom && scrollPosition < mainBottom) {
+                image.classList.add('not-fixed'); // Adiciona uma classe para remover a posição fixa
+            } else {
+                image.classList.remove('not-fixed'); // Remove a classe se a condição não for atendida
+            }
+        });</script>
+</body>
+</html>

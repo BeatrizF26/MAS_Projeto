@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Web-Site de MAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle texto" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Checkout</h1>
+
+        <form class="row g-3 needs-validation mb-5" novalidate action="http://192.168.160.36/FormEcho.aspx" method="post">
+
+            <div class="col-md-6 form-floating">
+                <input type="text" class="form-control" name="FirstName" id="validationCustom01" value="" pattern=".{3,}" required>
+                <label for="validationCustom01" class="form-label">Nome</label>
+                <div class="invalid-feedback"><i class="fa fa-warning"></i> Insira o primeiro nome. (Mínimo, 3 carateres)</div>
+            </div>
+
+            <div class="col-md-6 form-floating">
+                <input type="text" class="form-control" name="LastName" id="validationCustom02" value="" pattern=".{3,}" required>
+                <label for="validationCustom02" class="form-label">Sobrenome</label>
+                <div class="invalid-feedback"><i class="fa fa-warning"></i> Insira o último nome. (Mínimo, 3 carateres)</div>
+            </div>
+
+            <div class="col-md-6 form-floating">
+                <input type="email" class="form-control" name="Username" id="validationCustomUsername" required>
+                <label for="validationCustomUsername" class="form-label">E-mail</label>
+                <div class="invalid-feedback"><i class="fa fa-warning"></i> Insira um email válido.</div>
+            </div>
+            <div class="col-md-12 text-center" style="width:700px;">
+                <!-- Offset para alinhar com a coluna acima -->
+                <div class="card border-primary mb-3" style="max-width: 20rem; max-height: 10rem;">
+                    <div class="card-header text-primary">Método de pagamento</div>
+                    <div class="card-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento1" required>
+                            <label class="form-check-label" for="pagamento1"><i class="fa fa-cc-visa" aria-hidden="true"></i> Visa Payment</label>
+                        </div>
+                        <!-- Adicione os outros métodos de pagamento aqui -->
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="radio" name="pagamento" id="pagamento4">
+                            <label class="form-check-label" for="pagamento4"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Multibanco</label><br>
+                            <div class="invalid-feedback small"><i class="fa fa-warning"></i> Escolha uma das opções.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" name="InvalidCheck" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">Concordo com os Termos e Condições.</label>
+                    <div class="invalid-feedback"><i class="fa fa-warning"></i> Tem de concordar com os Termos e Condições.</div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Confirmar Dados</button>
+                <button class="btn btn-dark btn-sm" type="reset"><i class="fa fa-trash-o"></i> Recomeçar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="carrinho.js"></script>
+    <script>(function () {
+            'use strict';
+
+            var forms = document.querySelectorAll('.needs-validation');
+
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    var failed = false;
+                    var checkboxes = document.getElementsByName('pagamento');
+                    var checked = 0;
+
+                    for (var i = 0, n = checkboxes.length; i < n; i++) {
+                        if (checkboxes[i].checked) checked++;
+                    }
+
+                    if (checked == 0) {
+                        for (var i = 0, n = checkboxes.length; i < n; i++) {
+                            checkboxes[i].required = true;
+                        }
+                    } else {
+                        for (var i = 0, n = checkboxes.length; i < n; i++) {
+                            checkboxes[i].required = false;
+                        }
+                    }
+
+                    if (form.checkValidity() === false) {
+                        failed = true;
+                    }
+
+                    if (failed == true) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    // Adiciona a classe was-validated independentemente do resultado da validação
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Web-Site de MAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bolo-detalhes {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+        }
+
+        .bolo-info img {
+            max-width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .divider {
+            border-top: 2px solid #A0A0A0; /* Cor da linha */
+            margin: 20px 0; /* Espaçamento entre as divs */
+            width: 100%;
+        }
+
+        .subtotal-section2 {
+            display: flex;
+            align-items: center;
+            width: 100%; /* Defina a largura desejada */
+        }
+
+            .subtotal-section2 h3 {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+
+        .flex-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin-right: 60px;
+        }
+
+        .custom-content {
+            padding: 20px;
+            border-top: none;
+            margin-top: -1px;
+        }
+
+        .contact-details {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+            .contact-details h4 {
+                color: #E39089;
+            }
+
+        #bolos {
+            padding: 10px 15px;
+            background-color: #f8f8f8;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+            #bolos:hover {
+                background-color: #E39089;
+                color: #fff;
+            }
+
+        #avaliar {
+            padding: 10px 15px;
+            background-color: #E39089;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+            #avaliar:hover {
+                background-color: #A0A0A0;
+            }
+
+        .star {
+            font-size: 24px;
+            color: #E39089;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .alert-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #E39089;
+            color: #fff;
+            border-radius: 5px;
+            z-index: 999;
+        }
+
+            .alert-message.show {
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu texto-esquerda">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="bolo-detalhes">
+        <div class="bolo-info">
+            <img src="Imagens/logotipo10.png" alt="confeitaria 10">
+        </div><br />
+
+        <div class="bolo-description">
+            <h2 style="color: #E39089">Sabor & Arte</h2>
+            <hr class="divider">
+            <div class="contact-details">
+                <h4>Especialiade:</h4>
+                <a href="casamento.html">
+                    <button id="bolos">Bolos de Casamento</button>
+                </a>
+            </div>
+            <hr class="divider">
+            <div class="contact-details">
+                <h4>Avaliar:</h4>
+                <i class="fa fa-star-o star" onclick="rateStar(1)"></i>
+                <i class="fa fa-star-o star" onclick="rateStar(2)"></i>
+                <i class="fa fa-star-o star" onclick="rateStar(3)"></i>
+                <i class="fa fa-star-o star" onclick="rateStar(4)"></i>
+                <i class="fa fa-star-o star" onclick="rateStar(5)"></i>
+                <button id="avaliar" onclick="submitRating()">Submeter</button>
+                <div class="alert-message" id="alertMessage">
+                    A sua avaliação foi submetida.
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="contact-details">
+                <h4>Detalhes de Contato</h4><br />
+                <p><i class="fa fa-map-marker"></i> Rua Mário Sacramento, nº163, Setúbal</p>
+                <p><i class="fa fa-envelope"></i> Email: info@sabor&arte.com</p>
+                <p><i class="fa fa-phone"></i> Telefone: 252 870 081</p>
+                <p><i class="fa fa-globe"></i> Website: <a href="https://www.saborearte.com">www.saborearte.com</a></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+
+            </p>
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script>// Função para marcar estrelas clicadas e mudar o ícone
+        function rateStar(starNumber) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < starNumber) {
+                    star.classList.remove('fa-star-o');
+                    star.classList.add('fa-star');
+                } else {
+                    star.classList.remove('fa-star');
+                    star.classList.add('fa-star-o');
+                }
+            });
+        }
+
+        // Função para exibir a mensagem após clicar em Submeter
+        function submitRating() {
+            const alertMessage = document.querySelector('.alert-message');
+            alertMessage.classList.add('show');
+            setTimeout(() => {
+                alertMessage.classList.remove('show');
+            }, 2000); // Esconde o alerta após 2 segundos (3000 milissegundos)
+        }</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

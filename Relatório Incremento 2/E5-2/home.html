@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Web-Site de MAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu texto-esquerda">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active carrossel">
+                <img src="Imagens/imagem1.jpeg" class="d-block w-100 custom-image" alt="Bolo de Aniversário">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bolos de Aniversário</h5>
+                </div>
+            </div>
+            <div class="carousel-item carrossel">
+                <img src="Imagens/imagem2.jpeg" class="d-block w-100 custom-image" alt="Bolo de Casamento">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bolos de Casamento</h5>
+                </div>
+            </div>
+            <div class="carousel-item carrossel">
+                <img src="Imagens/imagem3.jpeg" class="d-block w-100 custom-image" alt="Bolo Normal">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bolos Simples</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="welcome-section">
+        <h1>Bem-vindo à Cake4You!</h1>
+        <p>Somos uma plataforma dedicada à arte da confeitaria, onde a doçura encontra a criatividade para tornar os momentos especiais ainda mais memoráveis. Na Cake4You, acreditamos que cada celebração merece um bolo exclusivo e único.</p>
+
+        <p>Com uma ampla variedade de opções, desde bolos de aniversário a bolos de casamento, bolos de batizado a bolos para ocasiões religiosas, estamos prontos para transformar a sua visão num delicioso e exuberante design de bolo. Nossa missão é oferecer uma experiência personalizada e inesquecível para os nossos clientes.</p>
+
+        <p>Além de oferecer uma gama diversificada de opções de bolos para cada evento especial, a Cake4You é um Marketplace colaborativo, permitindo que diferentes confeitarias associadas compartilhem sua expertise e talento, garantindo uma seleção ainda mais ampla e diversificada para nossos clientes.</p>
+
+        <p>Quer seja um aniversário íntimo ou um evento corporativo grandioso, estamos aqui para transformar a sua visão em realidade açucarada. Deixe-nos ser a doce inspiração para as suas celebrações!</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+
+            </p>
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+</body>
+</html>
+

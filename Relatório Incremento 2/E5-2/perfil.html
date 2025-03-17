@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para o registo */
+        /* CSS para o formulário de entrada/registro */
+        .form-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .form-container h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .form-container form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-container input[type="text"],
+            .form-container input[type="email"],
+            .form-container input[type="password"],
+            .form-container button[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .form-container button[type="submit"] {
+                background-color: #E39089;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+                .form-container button[type="submit"]:hover {
+                    background-color: #cc7b7e;
+                }
+
+        .form-container {
+            max-width: 300px; /* Define a largura máxima */
+            margin: 100px auto; /* Centraliza na página */
+            padding: 20px; /* Adiciona algum preenchimento interno */
+            border: 1px solid #f8f8f8; /* Adiciona uma borda */
+            border-radius: 10px; /* Arredonda as bordas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+        }
+
+            .form-container h2 {
+                text-align: center; /* Centraliza o título */
+                margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+                color: #E39089; /* Cor do título */
+            }
+
+        .blank {
+            width: 600px;
+            height: 285px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="py-1 mb-1">
+        <p></p>
+        <h1>Perfil</h1>
+    </div>
+    <div class="profile">
+        <div class="column1">
+            <br>
+            <div id="image-displayer" style="margin: auto; width: 200px; height: 200px">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgoIBxAFCggGBxYHCAYGBxsUCggWIB0iIiAdHx8kHSggJBolGx8fITEhJSkrLi4uIx8zODMsNygtLisBCgoKCg0OEA8PEisZExkrKysrKysrLSsrKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcCBAUBA//EADsQAAICAQEEBAoIBwEAAAAAAAACAQMEBQYREiExUnGxEyIyQVFhgZGh0SQzQkNTYmNyFBYjNHSywRX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/ALSABSQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8ZlRZZuGFVeJmZtyrAHp8cnKxsVeLJfGqj9e2IIpre1TszUaXPAi+LOfw+NZ+30R6yL2O9jy9k2O7dNljb2b2gqxv5g0ni3eHxPjw9xu42VjZS8WM+NbH6FsSVUZVu9bw9c2I69FlbbmX2gq2QQ7RNq3Rlo1SeNG8WM/h8av93pj1kwVldYZeGVZeJWVt6tAHoAAAAAAAAAAAAAAAAAAAAAAABDtsdYl7J03Hncif3Vit9ZPV7I8/rJRqWVGDgXZU8P0eqWhW+1Pmj37ir3dndneWZ3aWdm+1M9IGIAKYAAASrY7V5WyNOyJ31v/AGtjfdz1eyfN6+0ipkjsjq6SyujQyMv2ZjoJatkGtpuVGdgU5UcP0iqGlV+zPnj37zZAAAAAAAAAAAAAAAAAAAAAAI/ttZKaOqR9/lKs9kRM/wDIIITjbld+l0t1cyP9ZIODQAFMAAAABLU72Jsl9HaufuMplj8sTET/ANJARzYZd2l3N1syf9YJGAAAAAAAAAAAAAAAAAAAAAAcfa2ibtDumOc47Lk+6efwmSvC2Lq0upeqzml6TW6+qY3FXZ+K+DmW4tvl0Pw8XWjzT7YA+AAKYAAAAbGBi2Z2ZVi1eXkPw8XVjzz7IJaneyVE06HTM8pyGa/3zy+EQdgwprSmlKq+SUJFaL6ojcZgAAAAAAAAAAAAAAAAAAAAAA4m0miRqlUW0eDXMoXhTi5LdHVme6TtgCqLqrKLWquWyuxG4XrsXcynzLRz9OxNQWFy66rOHos6LF7JjmcLI2MxXaZx7cuuPw7Uh19/KQIWCV/yW+/6+rd/iz8zZx9jMZWici3Lsj8OlIRffzkCH002X2rVStlljtwpXWu9mJ5s3okaXVNt/g2zL14X4ea0x1Ynvk6OBp2Jp6yuJXVXxdNnTY3bM8zaAAAAAAAAAAAAAAAAAAAAAAAAAA0tR1TE01OPLdVlvIpXnZZ2QRbUNrsu2ZXBWuhPxbPGu+UATWZhV4p4YjrNyU07dV06md1t+nrPV8PE9xW+Tl5OU3Fkvk2z+q8z8D49HQCrJ/8Af0nf9fhfH5H2q1XTrpiKr9PaW+z4eI7ysB09IZVtRMMvFHDMdZeanpVWNl5OK3FjPk1T+lbMfA7+n7XZdUwuctd6fi1+Ld8pDamwNLTtUxNSTjxHVpXy6W5WV9sG6AAAAAAAAAAAAAAAAAAAAjW0G0qYkti4Hg7MhfFsv6a6PVHpn4QY7V67ONDYGHO65l+k31t9THoj19xCwM7rbL7Wtuayyx24nssbezGAAYAAoAAAAAGdNtlFq20tZXYjcSWVtuZSabP7SplyuLn+DryG8Wu/orv9U+ifhJCAS1bYIxsprs5MLgZk77lX6NfY310eifX3knAAAAAAAAAAAAAABzNoNTjS9PaxeHw9v9LGVut6eyDplebU5852quqzvpwt+NTw+Ty6Z9s9wHIdmdmd5ZmduKWZt7NPpPAAAAKYAAAAAAAAAAD1GZGV0llZG4oZW3Ms+ksfZ/U41TT1sbhi+r+jk1r1vT2SVudjZbPnB1VFad1ObuxrOLyV39E+ye8lqwwAAAAAAAAAAAAGnq+V/BaZkZMcmqong/dPKPjJWHPz85JztvdwaTXVHTlZUcXZETPyIMAABTAAAAAAAAAAAAAAHPzcpAJas/SMr+N03HyJ5tbRHH+6OU/GDcI7sRdx6VZXPTj5U7uyYifmSIAAAAAAAAAAAIlt83i4afmsbuIiAGaAAoAAAAAAAAAAAAAAAAS7YFvFzE/NW3eS0AluAAAAAD//2Q==" class="rounded-circle" style="width: 100%; height: 100%">
+            </div>
+            <div>
+                <label for="image-input" style="text-align: center; width: 100%"><u>Adicionar Imagem</u></label>
+                <input type="file" accept="image/*" id="image-input" style="display: none" onChange="displayImage()">
+            </div>
+        </div>
+        <div class="column2">
+            <br>
+            <div>
+                <p class="pfpclass">Nome</p>
+                <p id="nome-display"></p>
+                <input hidden class="form-control" style="max-width:fit-content; margin-bottom: 10px" id="nome-form" type="text">
+            </div>
+            <div>
+                <p class="pfpclass">Data de Nascimento</p>
+                <p id="data-display"></p>
+                <input hidden class="form-control" style="max-width:fit-content; margin-bottom: 10px" id="data-form" type="date">
+            </div>
+            <div>
+                <p class="pfpclass">Género</p>
+                <p id="gender-display"></p>
+                <label hidden id="forgender" for="options">Género:</label>
+                <select hidden id="gender-form" name="options" onChange="getSelectedOption()">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+            <div>
+                <p class="pfpclass">Localidade</p>
+                <p id="local-display"></p>
+                <input hidden class="form-control" style="max-width:fit-content; margin-bottom: 10px" id="local-form" type="text">
+            </div>
+            <br>
+            <br>
+            <button class="custom-button2" id="final-button" onclick="editarPerfil()">Editar Perfil</button>
+            <button hidden class="custom-button2" id="real-final-button" onclick="salvarPerfil()">Salvar Perfil</button>
+        </div>
+        <div class="column3">
+            <br id="secret" hidden>
+            <p class="pfpclass">Método de pagamento</p>
+            <br>
+            <div>
+                <p class="pfpclass2">Titulo</p>
+                <input class="form-control" id="titulo" type="text">
+                <p hidden id="titulo-display"></p>
+                <br>
+                <p class="pfpclass2">Número de Cartão</p>
+                <input class="form-control" id="cartao" type="number">
+                <p hidden id="cartao-display"></p>
+                <br>
+                <p class="pfpclass2">CVC</p>
+                <input class="form-control" id="cvc" type="number">
+                <p hidden id="cvc-display"></p>
+                <br>
+                <p class="pfpclass2">Data de Validade</p>
+                <input class="form-control" id="expiration" type="date">
+                <p hidden id="expiration-display"></p>
+            </div>
+            <br>
+            <button type="submit" onclick="saveCard()" id="submit-button-card" class="custom-button3">Adicionar Cartão</button>
+        </div>
+    </div><br />
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+
+            </p>
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="perfil.js"></script>
+</body>
+</html>
+
+

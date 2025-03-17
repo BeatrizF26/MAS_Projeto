@@ -1,0 +1,249 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texto-esquerda {
+    text-align: left !important;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #E39089; /* Cor do texto */
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+    .navbar a:hover {
+        color: #CBB26B; /* Cor do texto ao passar o mouse sobre o link */
+    }
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+/* Estilos para o carrossel */
+.carrossel {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-item {
+    z-index: -100;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    width: 80%;
+    min-height: 600px;
+    margin: auto;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.form-search {
+    width: 40%;
+}
+/* Esilos para o texto de boas vindas */
+.welcome-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    color: #e39089; /* Cor personalizada para o título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilo para os botões */
+.btn-custom {
+    color: #E39089; /* Cor do texto padrão */
+    border: none; /* Remove a borda */
+    background-color: transparent; /* Define o fundo como transparente */
+    padding: 5px 10px; /* Adiciona espaço interno */
+    font-size: inherit; /* Usa o tamanho de fonte padrão */
+    cursor: pointer; /* Altera o cursor para indicar a interação */
+    transition: background-color 0.3s; /* Adiciona transição de cor */
+}
+
+    /* Altera a cor do botão quando passa o mouse */
+    .btn-custom:hover {
+        background-color: #D3D3D3; /* Cor de fundo ao passar o mouse */
+        color: #E39089; /* Cor do texto ao passar o mouse */
+    }
+
+    /* Estilo para o ícone dentro do botão */
+    .btn-custom i {
+        vertical-align: middle; /* Alinha verticalmente o ícone */
+        margin-right: 5px; /* Adiciona um pequeno espaço à direita do ícone */
+    }
+
+/* Estilos para o rodapé */
+
+/* Estilos para as seções dentro do rodapé */
+.footer {
+    background-color: #f8f8f8;
+    padding-top: 15px;
+    color: #333;
+}
+
+    .footer h4 {
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    .footer p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+/* Estilos para os ícones sociais */
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+
+    .social-icons a {
+        color: #555;
+        font-size: 20px;
+    }
+
+/* Estilos para a barra inferior */
+.bottom-bar {
+    background-color: #e39089;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin: 10px 0px; /* Ajuste o espaçamento inferior conforme necessário */
+}
+
+.col-md-6 {
+    width: 48%; /* Define a largura das colunas para serem quase iguais */
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%; /* Garante que o mapa seja responsivo */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    border: 1px solid #ccc;
+}
+
+.custom-button-custom {
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    background-color: #E39089; /* Cor de fundo personalizada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .custom-button-custom:hover {
+        background-color: #cc7b7e; /* Cor de fundo ao passar o mouse */
+    }
+
+.column1 {
+    float: left;
+    width: 25%;
+}
+
+.column2 {
+    float: left;
+    width: 35%;
+}
+
+.column3 {
+    float: left;
+    width: 40%;
+}
+
+.profile {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 8px solid #E39089;
+    height: 500px;
+    border-radius: 25px;
+    background-clip: padding-box;
+    background-color: #F1F1F1;
+    margin: auto;
+    width: 85%
+}
+
+.pfpclass {
+    font: 24px bold;
+    color: #e39089;
+    margin: 0px
+}
+
+.pfpclass2 {
+    font: 20px bold;
+    color: #e39089;
+    margin: 0px
+}
+
+.custom-button2 {
+    padding: 10px 20px;
+    background-color: #E39089; /* Cor de fundo personalizada */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    width: 60%;
+}
+
+    .custom-button2:hover {
+        background-color: #cc7b7e; /* Cor de fundo ao passar o mouse */
+    }
+
+.custom-button3 {
+    padding: 10px 20px;
+    background-color: #E39089; /* Cor de fundo personalizada */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    width: 60%;
+}
+
+    .custom-button3:hover {
+        background-color: #cc7b7e; /* Cor de fundo ao passar o mouse */
+    }

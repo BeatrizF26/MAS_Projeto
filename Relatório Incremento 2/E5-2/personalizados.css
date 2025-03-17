@@ -1,0 +1,305 @@
+﻿main {
+    margin-top: 20px;
+    position: relative;
+}
+
+.container3 {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.image-section {
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+}
+
+    .image-section img {
+        max-width: 100%;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.options {
+    color: #E39089;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    color: #A0A0A0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select,
+input[type="text"] {
+    color: #A0A0A0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.candle-images img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 10%; /* Cria uma borda arredondada para as imagens */
+    cursor: pointer; /* Muda o cursor ao passar por cima das imagens */
+}
+
+    .candle-images img.selected {
+        border: 2px solid #E39089; /* Adiciona um destaque à imagem selecionada */
+    }
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-checkboxes,
+.right-checkboxes {
+    width: 48%; /* Defina a largura apropriada para os números */
+}
+
+    .left-checkboxes input[type="checkbox"],
+    .right-checkboxes input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    /* Estilos adicionais para ajustar a aparência dos checkboxes, se necessário */
+    .left-checkboxes label,
+    .right-checkboxes label {
+        display: inline-block;
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .left-checkboxes input[type="checkbox"] + label::before,
+    .right-checkboxes input[type="checkbox"] + label::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        vertical-align: middle;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .left-checkboxes input[type="checkbox"]:checked + label::before,
+    .right-checkboxes input[type="checkbox"]:checked + label::before {
+        background-color: #E39089; /* Cor de fundo quando selecionado */
+    }
+
+    .left-checkboxes input[type="checkbox"] {
+        display: none;
+    }
+
+    .right-checkboxes input[type="checkbox"] {
+        display: none;
+    }
+
+    /* Estilos para os rótulos quando o mouse está sobre os checkboxes */
+    .left-checkboxes label:hover,
+    .right-checkboxes label:hover {
+        color: #E39089;
+    }
+
+.custom-checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+    .custom-checkbox-group .left-checkboxes,
+    .custom-checkbox-group .right-checkboxes {
+        width: 48%;
+    }
+
+        .custom-checkbox-group .left-checkboxes input[type="checkbox"],
+        .custom-checkbox-group .right-checkboxes input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .custom-checkbox-group .left-checkboxes label,
+        .custom-checkbox-group .right-checkboxes label {
+            display: inline-block;
+            margin-bottom: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+
+        .custom-checkbox-group .left-checkboxes input[type="checkbox"] + label::before,
+        .custom-checkbox-group .right-checkboxes input[type="checkbox"] + label::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            vertical-align: middle;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .custom-checkbox-group .left-checkboxes input[type="checkbox"]:checked + label::before,
+        .custom-checkbox-group .right-checkboxes input[type="checkbox"]:checked + label::before {
+            background-color: #E39089;
+        }
+
+        .custom-checkbox-group .left-checkboxes input[type="checkbox"] {
+            display: none;
+        }
+
+        .custom-checkbox-group .right-checkboxes input[type="checkbox"] {
+            display: none;
+        }
+
+        .custom-checkbox-group .left-checkboxes label:hover,
+        .custom-checkbox-group .right-checkboxes label:hover {
+            color: #E39089;
+        }
+
+.left-checkboxes input[type="radio"],
+.right-checkboxes input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilos adicionais para ajustar a aparência dos radio buttons, se necessário */
+.left-checkboxes label,
+.right-checkboxes label {
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.left-checkboxes input[type="radio"] + label::before,
+.right-checkboxes input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Cria um círculo */
+    vertical-align: middle;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.left-checkboxes input[type="radio"]:checked + label::before,
+.right-checkboxes input[type="radio"]:checked + label::before {
+    background-color: #E39089; /* Cor de fundo quando selecionado */
+}
+
+.left-checkboxes input[type="radio"] {
+    display: none;
+}
+
+.right-checkboxes input[type="radio"] {
+    display: none;
+}
+
+/* Estilos para os rótulos quando o mouse está sobre os radio buttons */
+.left-checkboxes label:hover,
+.right-checkboxes label:hover {
+    color: #E39089;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+/* Estilização do separador */
+.divider {
+    border-top: 2px solid #A0A0A0; /* Cor da linha */
+    margin: 20px 0; /* Espaçamento entre as divs */
+}
+
+.subtotal-section {
+    display: flex;
+    align-items: center;
+    width: 150%; /* Defina a largura desejada */
+}
+
+    .subtotal-section h3 {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+.price-box {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 65px;
+}
+
+.flex-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+#quantity {
+    display: flex;
+    width: 60px;
+    margin-right: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#addToCartBtn {
+    padding: 10px 15px;
+    background-color: #E39089;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    #addToCartBtn:hover {
+        background-color: #A0A0A0;
+    }

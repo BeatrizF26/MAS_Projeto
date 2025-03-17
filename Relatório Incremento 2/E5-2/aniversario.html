@@ -1,0 +1,374 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Bolos de Aniversário</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrinho.css" />
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: calc(33.33% - 20px); /* 33.33% com espaço de 20px entre cada card */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+
+            .card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .card li {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card a {
+                color: #E39089;
+                text-decoration: none;
+                margin: 0 5px;
+                align-items: center;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="empresa.html">Bolos de Empresa</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="py-1 mb-1">
+        <p>
+
+        </p>
+        <h1 data-bind="text:displayName">Bolos de Aniversário</h1>
+    </div>
+    <div class="card-container">
+        <div class="card card-aniversario1">
+            <img src="Imagens/imagem4.jpeg" alt="Bolo 1">
+            <h3>Bolo para Ela</h3>
+            <p>Bolo de aniversário personalizado para o sexo feminino produzido pela confeitaria Sabor Divino.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom heart-button" style="display: inline-block;">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                    </button>
+                    <button class="btn-custom cart-button" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">39.99€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario2">
+            <img src="Imagens/imagem5.jpeg" alt="Bolo 2">
+            <h3>Bolo para Ele</h3>
+            <p>Bolo de aniversário personalizado para o sexo masculino produzido pela confeitaria Doce Paladar.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">31.50€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario3">
+            <img src="Imagens/imagem6.jpeg" alt="Bolo 3">
+            <h3>Bolo de 1º Aniversário</h3>
+            <p>Bolo para o primeiro aniversário personalizado produzido pela confeitaria Fornada Mágica.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">34.99€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card card-aniversario4">
+            <img src="Imagens/imagem7.jpeg" alt="Bolo 4">
+            <h3>Bolo de Harry Potter</h3>
+            <p>Bolo de aniversário personalizado com elementos da saga Harry Potter produzido pela confeitaria Fábrica de Bolos.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">41.25€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario5">
+            <img src="Imagens/imagem8.jpeg" alt="Bolo 5">
+            <h3>Bolo da Disney</h3>
+            <p>Bolo de aniversário personalizados com a personagem da Disney, Mini produzido pela confeitaria Sabor & Arte.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">29.99€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario6">
+            <img src="Imagens/imagem9.jpeg" alt="Bolo 6">
+            <h3>Bolo de Profissão</h3>
+            <p>Bolo de aniversário personalizados com uma profissão de saúde produzido pela confeitaria Mundo dos Bolos. </p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">37.55€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card card-aniversario7">
+            <img src="Imagens/imagem10.jpeg" alt="Bolo 7">
+            <h3>Bolo de Desporto</h3>
+            <p>Bolo de aniversário personalizado com o desporto futebol produzido pela confeitaria Delícias de Padaria.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">33.50€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario8">
+            <img src="Imagens/imagem12.jpeg" alt="Bolo 8">
+            <h3>Bolo Adulto</h3>
+            <p>Bolo de aniversário personalizado com conteúdo adulto produzido pela confeitaria Doce Tentação.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">38.70€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card card-aniversario9">
+            <img src="Imagens/imagem11.jpeg" alt="Bolo 9">
+            <h3>Bolo de Última Hora</h3>
+            <p>Bolo de aniversário feito para encomendas de última hora produzido pela confeitaria Pastelaria Encantada.</p>
+            <ul>
+                <li>
+                    <button class="btn-custom" style="display: inline-block;"><i class="fa fa-heart-o fa-lg"></i></button>
+                    <button class="btn-custom" style="display: inline-block;">
+                        <i class="fa fa-shopping-cart fa-lg"></i> <span style="color: #E39089;">23.50€</span>
+                    </button>
+                    <button class="btn-custom view-button" style="display: inline-block;">
+                        <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="py-1 mb-1">
+        <p>
+
+        </p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Nossa Localização</h4>
+                    <p> Rua dos Bolos, 123</p>
+                    <p> Cidade de Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Apoio ao Cliente</h4>
+                    <p> Email: info@cake4you.com</p>
+                    <p> Telefone: 252 456 789</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.580763680586!2d-8.64699438464271!3d40.64006397933979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24efb81c53613d%3A0x400c4293c7c5c50!2sAveiro!5e0!3m2!1sen!2spt!4v1635550460716!5m2!1sen!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>
+
+            </p>
+            <p>
+                &copy; 2023 Cake4You - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="m-header">Modal Header</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body mt-2 mb-2">
+                <p id="m-body">Some text in the Modal Body</p>
+            </div>
+            <div class="modal-footer">
+                <h3 id="m-footer">Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="carrinho.js"></script>
+    <script>document.querySelectorAll('.view-button').forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                // Obtenha a classe do card associado ao botão
+                var cardClass = event.target.closest('.card').classList[1];
+
+                // Determina a URL de destino com base na classe do card
+                var destinationURL = '';
+
+                switch (cardClass) {
+                    case 'card-aniversario1':
+                        destinationURL = 'aniversario1.html';
+                        break;
+                    case 'card-aniversario2':
+                        destinationURL = 'aniversario2.html';
+                        break;
+                    case 'card-aniversario3':
+                        destinationURL = 'aniversario3.html';
+                        break;
+                    case 'card-aniversario4':
+                        destinationURL = 'aniversario4.html';
+                        break;
+                    case 'card-aniversario5':
+                        destinationURL = 'aniversario5.html';
+                        break;
+                    case 'card-aniversario6':
+                        destinationURL = 'aniversario6.html';
+                        break;
+                    case 'card-aniversario7':
+                        destinationURL = 'aniversario7.html';
+                        break;
+                    case 'card-aniversario8':
+                        destinationURL = 'aniversario8.html';
+                        break;
+                    case 'card-aniversario9':
+                        destinationURL = 'aniversario9.html';
+                        break;
+
+                    default:
+                        // Página de fallback caso a classe não seja reconhecida
+                        alert('Pagina nao encontrada')
+                }
+
+                // Redirecione para a URL de destino
+                window.location.href = destinationURL;
+            });
+        });</script>
+</body>
+</html>

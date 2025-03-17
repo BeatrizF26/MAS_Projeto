@@ -1,0 +1,1133 @@
+{
+  "id": "20759b4f-3860-4811-ac5d-61f2bbe19481",
+  "version": "2.0",
+  "name": "Testes",
+  "url": "https://cake4you-mas.netlify.app/",
+  "tests": [{
+    "id": "c56c83dd-981e-4e3f-b5c7-563c3226c336",
+    "name": "Criar conta",
+    "commands": [{
+      "id": "115d514a-f7d3-4b36-a737-e1d0366a3f47",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a92bd7a-a867-477f-ace8-01056607eb8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e935573-9c7c-41c7-8b8b-ea59b9d8d2fa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Registrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46cd79c6-db3d-4dc8-b3de-495c93bf1bdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.7469701118536525']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Registrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77ae5ca6-38d6-47f0-87e2-f61493abef1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#abId0\\.1326482947704748 > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1220556b-f246-4eab-a7dd-5fc89afe6d76",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#abId0\\.1326482947704748 > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rafael"
+    }, {
+      "id": "d09fdaeb-cf5d-4b1a-b6b9-3c833adccaa2",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=data", "name"],
+        ["css=#abId0\\.1326482947704748 > #data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0002-02-26"
+    }, {
+      "id": "1c2362e3-2fb9-4f7f-975c-62722b438f7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=data", "name"],
+        ["css=#abId0\\.1326482947704748 > #data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0020-02-26"
+    }, {
+      "id": "04b946d8-93fe-4945-b473-ac37ba9c138b",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=data", "name"],
+        ["css=#abId0\\.1326482947704748 > #data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0200-02-26"
+    }, {
+      "id": "d0e2ffd2-39ff-4ee2-8d8a-7f906fabb1b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=data",
+      "targets": [
+        ["id=data", "id"],
+        ["name=data", "name"],
+        ["css=#abId0\\.1326482947704748 > #data", "css:finder"],
+        ["xpath=//input[@id='data']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2005-02-26"
+    }, {
+      "id": "5be36aa5-1a66-4f48-8ece-62812bb8dc74",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#abId0\\.1326482947704748 > #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "5a365d17-601f-46f1-b332-3154e0f4146f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#abId0\\.1326482947704748 > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "cb511e3b-0c4a-4308-98ee-6c4c7ea61c80",
+      "comment": "",
+      "command": "type",
+      "target": "id=confpassword",
+      "targets": [
+        ["id=confpassword", "id"],
+        ["name=password2", "name"],
+        ["css=#abId0\\.1326482947704748 > #confpassword", "css:finder"],
+        ["xpath=//input[@id='confpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "bf0ddf90-6729-47f9-8731-4a99f1c77a96",
+      "comment": "",
+      "command": "click",
+      "target": "id=masculino",
+      "targets": [
+        ["id=masculino", "id"],
+        ["css=#masculino", "css:finder"],
+        ["xpath=//input[@id='masculino']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df092549-7644-47e6-b327-f4bdd3301665",
+      "comment": "",
+      "command": "click",
+      "target": "id=morada",
+      "targets": [
+        ["id=morada", "id"],
+        ["name=morada", "name"],
+        ["css=#abId0\\.1326482947704748 > #morada", "css:finder"],
+        ["xpath=//input[@id='morada']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f01bdc-5dae-413d-9f7f-4516fbea50c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=morada",
+      "targets": [
+        ["id=morada", "id"],
+        ["name=morada", "name"],
+        ["css=#abId0\\.1326482947704748 > #morada", "css:finder"],
+        ["xpath=//input[@id='morada']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "Lisboa"
+    }, {
+      "id": "3b75eb65-1420-4505-a9bb-508ed2d9591a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(14)",
+      "targets": [
+        ["css=button:nth-child(14)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.1326482947704748']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "265120d9-1dd0-4d40-9c58-3bd71781e0e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/perfil.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eadfc0b3-cd71-48f7-b429-6c2a830f628c",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "92d05b04-7bf7-4f6a-b447-50c57d521ec4",
+    "name": "Entrar no site",
+    "commands": [{
+      "id": "28ee1ff7-19cf-4de0-a04d-9b27dd95a755",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b481944a-4049-4c38-8c66-79c08fadccc7",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.9995791100146205']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1cba33-2315-497b-a7e8-d13d7b4dc381",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.9995791100146205']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "240e7223-e2e1-4902-ac3c-ea4e1077281d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.9995791100146205']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "9673a792-c883-417f-98fb-79b84ec6037e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.9995791100146205']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "745de6b5-faa2-4755-b6c8-9d66da223b0a",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e9bc607-d04a-4805-9eaa-270872d305ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/perfil.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6b674fd-7215-463c-ab70-460b92a0a36d",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e393c609-cc14-48cf-9dfd-f83facc2200d",
+    "name": "Avaliar confeitarias",
+    "commands": [{
+      "id": "d2b002df-9064-4c56-8425-02f73f0b762b",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11311538-5c5b-40c1-9ac5-2cceff373d3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44f78717-875e-4336-97ed-ceb01cc64aa6",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.05148657065302742']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d36dde0d-cf08-4175-99a7-8b577b19d343",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.05148657065302742']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "149e41d1-c249-4a30-bf7f-a084ef19e275",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.05148657065302742']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "d7e32746-e284-4207-b22f-215ece49e299",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.05148657065302742']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9250462-9226-4c3f-8f0a-9d8468e4a28e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Confeitarias",
+      "targets": [
+        ["linkText=Confeitarias", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Confeitarias')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/confeitarias')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Confeitarias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b676231-5001-40b6-a321-869c0a361bf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(4) h4",
+      "targets": [
+        ["css=.container:nth-child(4) h4", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Doce Paladar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8096dfe1-4ee3-43f0-8963-e01486e04a7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa:nth-child(5)",
+      "targets": [
+        ["css=.fa:nth-child(5)", "css:finder"],
+        ["xpath=//i[@onclick='rateStar(4)']", "xpath:attributes"],
+        ["xpath=//i[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eae8d762-9265-415e-8089-bef673f2988e",
+      "comment": "",
+      "command": "click",
+      "target": "id=avaliar",
+      "targets": [
+        ["id=avaliar", "id"],
+        ["css=#avaliar", "css:finder"],
+        ["xpath=//button[@id='avaliar']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submeter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10c8d73e-8d0a-45e5-ba75-61e115048f90",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "030353aa-2a67-4280-b1d9-ae25729dda19",
+    "name": "Comprar bolo",
+    "commands": [{
+      "id": "799f4b38-7462-4d80-851b-3f3b8080f704",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f361af6-a141-4e73-8da2-f4d2c966e910",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.035467434927238806']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd6dc9dd-8dd0-4a71-815e-ff4fcb530db9",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.035467434927238806']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "4ef3caec-d407-414a-8dc5-ae9877563c07",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.035467434927238806']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "053aa798-27cf-401b-9f51-c064b0c36d3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.035467434927238806']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd96f434-7492-4c0e-92a0-1b5feb5d7144",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos Específicos",
+      "targets": [
+        ["linkText=Bolos Específicos", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos Específicos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Bolos Específicos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e331411c-1390-4100-9c61-9985cb936784",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos de Aniversário",
+      "targets": [
+        ["linkText=Bolos de Aniversário", "linkText"],
+        ["css=li:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos de Aniversário')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/aniversario')]", "xpath:href"],
+        ["xpath=//li[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bolos de Aniversário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24277919-82ea-47da-9c18-1404cd955d35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-button > span",
+      "targets": [
+        ["css=.cart-button > span", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'39.99€')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b479289d-c54f-4b47-bef8-09870af7caf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//div[@id='myModal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d7366b-fdee-4352-905a-e3c1bff604f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/carrinho')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "998d8c20-7285-4a57-94be-a1dbba3b6798",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-button-custom",
+      "targets": [
+        ["css=.custom-button-custom", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e19ddc85-4a1f-46d2-add2-b2a2c04cd46d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//div[@id='myModal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7543bf8b-ff04-4eb1-8009-54b56c7fa82c",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom01",
+      "targets": [
+        ["id=validationCustom01", "id"],
+        ["name=FirstName", "name"],
+        ["css=#validationCustom01", "css:finder"],
+        ["xpath=//input[@id='validationCustom01']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04305c61-d3b0-4ae4-a622-4bb27519a45d",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom01",
+      "targets": [
+        ["id=validationCustom01", "id"],
+        ["name=FirstName", "name"],
+        ["css=#validationCustom01", "css:finder"],
+        ["xpath=//input[@id='validationCustom01']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rafael "
+    }, {
+      "id": "9083e22d-ea43-40cb-b157-5fc057cb5c32",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=LastName", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Soares"
+    }, {
+      "id": "be803b03-cd01-4d0e-9b56-1cc48391d30d",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustomUsername",
+      "targets": [
+        ["id=validationCustomUsername", "id"],
+        ["name=Username", "name"],
+        ["css=#validationCustomUsername", "css:finder"],
+        ["xpath=//input[@id='validationCustomUsername']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "14149d25-49af-457b-9c0c-432bb2aabf83",
+      "comment": "",
+      "command": "click",
+      "target": "id=pagamento4",
+      "targets": [
+        ["id=pagamento4", "id"],
+        ["css=#pagamento4", "css:finder"],
+        ["xpath=//input[@id='pagamento4']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec29631f-a5e7-4b46-b225-c8731f1d8353",
+      "comment": "",
+      "command": "click",
+      "target": "id=invalidCheck",
+      "targets": [
+        ["id=invalidCheck", "id"],
+        ["name=InvalidCheck", "name"],
+        ["css=#invalidCheck", "css:finder"],
+        ["xpath=//input[@id='invalidCheck']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a36c0c33-70b0-456d-809c-53e5f9024043",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Confirmar Dados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4888c17e-8ef6-44d5-8bea-09ee22bd2b63",
+    "name": "Adicionar bolo aos favoritos",
+    "commands": [{
+      "id": "5209f4b7-020c-42a0-87fe-5e17a5cb8cc9",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21e0a673-5ee9-49ad-8cda-1014df6ace1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2024436667108367']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "100bad2b-d747-4ad3-a293-7309b7fc338d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2024436667108367']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "e0786820-9d01-4d9c-b2ed-422466f87596",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2024436667108367']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "a7accf1a-ae6b-46c2-89a1-46d09a0c70c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2024436667108367']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c275214-ef8f-4c74-a878-affd59d5553f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos Específicos",
+      "targets": [
+        ["linkText=Bolos Específicos", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos Específicos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Bolos Específicos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd80dff7-a96b-484f-bdb8-16d1eb2001cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos de Aniversário",
+      "targets": [
+        ["linkText=Bolos de Aniversário", "linkText"],
+        ["css=li:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos de Aniversário')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/aniversario')]", "xpath:href"],
+        ["xpath=//li[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bolos de Aniversário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2255d393-57c1-499c-ba8d-274cf10d8f0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-aniversario2 .fa-heart-o",
+      "targets": [
+        ["css=.card-aniversario2 .fa-heart-o", "css:finder"],
+        ["xpath=//div[2]/ul/li/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36cc2395-3f55-48ec-b6be-f3fc2f5fe904",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//div[@id='myModal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5100475-a965-4f7a-bc0b-f092db585aa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-aniversario3 .fa-heart-o",
+      "targets": [
+        ["css=.card-aniversario3 .fa-heart-o", "css:finder"],
+        ["xpath=//div[3]/ul/li/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "798e8b03-1993-4461-93a2-941ddd69b608",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//div[@id='myModal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59d45747-66d5-4c63-9526-13bb0f9ba977",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Favoritos",
+      "targets": [
+        ["linkText=Favoritos", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Favoritos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/favoritos')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Favoritos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cedc52a1-ce2e-41e1-a3da-8cd0de92da5d",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "73d72b43-3da5-444c-9b94-3e5e45687991",
+    "name": "Aceder a informações sobre receitas",
+    "commands": [{
+      "id": "3e0ac660-7f0d-4476-b8e9-28b392b76558",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "175fa5ca-8efc-469c-b162-3085d7f0d7bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x450",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bff05c7c-040c-48c6-a9eb-53ec425812cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2311066411235958']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3093d7a9-8e5a-4059-9dfa-f656aac754cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2311066411235958']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "c967939f-7952-463f-8cdc-34b029bac62c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2311066411235958']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "e8beafd1-7a19-42c9-930a-e483e85e011a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='abId0.2311066411235958']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "721d7fc5-d3c2-438e-817f-5fb29991727d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos Específicos",
+      "targets": [
+        ["linkText=Bolos Específicos", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos Específicos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Bolos Específicos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a460c96-2f21-42d8-a566-177949ea6866",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos de Aniversário",
+      "targets": [
+        ["linkText=Bolos de Aniversário", "linkText"],
+        ["css=li:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Bolos de Aniversário')]", "xpath:link"],
+        ["xpath=//div[@id='navbarScroll']/ul/li[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/aniversario')]", "xpath:href"],
+        ["xpath=//li[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bolos de Aniversário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d524c9fa-dba2-4995-bb4c-17a998dd2c53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-aniversario3 .view-button > .fa",
+      "targets": [
+        ["css=.card-aniversario3 .view-button > .fa", "css:finder"],
+        ["xpath=//div[3]/ul/li/button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72dfe1ea-9b60-47b4-af7c-38fc7cfbed19",
+      "comment": "",
+      "command": "click",
+      "target": "id=receita-tab",
+      "targets": [
+        ["id=receita-tab", "id"],
+        ["css=#receita-tab", "css:finder"],
+        ["xpath=//button[@id='receita-tab']", "xpath:attributes"],
+        ["xpath=//ul[@id='myTab']/li[2]/button", "xpath:idRelative"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alergéticos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf9ff41c-f490-4873-b473-51aa32be63c8",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5c00d6f1-571b-4702-9c98-60f05ec401bc",
+    "name": "Criar bolo personalizado",
+    "commands": [{
+      "id": "ca0feca6-bc49-4591-9650-fd99aa1b70cb",
+      "comment": "",
+      "command": "open",
+      "target": "https://cake4you-mas.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1909b323-7bb0-42cd-a778-d5d736b0c221",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3aa9682-c5ce-4856-a433-62c7a7cfa9bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "rafael26@gmail.com"
+    }, {
+      "id": "b782abe0-7a2c-4023-b601-c2558671f505",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "1111"
+    }, {
+      "id": "bd002c20-23b9-432f-ba7c-098d209bddfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8eebcc6a-1417-4303-ac7c-4cd161efa9d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos Específicos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c44186a8-ff12-4804-9089-01df1f89af89",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bolos Personalizados",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81275f5d-fe92-45e1-9a6b-257295ba79be",
+      "comment": "",
+      "command": "select",
+      "target": "id=confeitarias",
+      "targets": [],
+      "value": "Doce Paladar"
+    }, {
+      "id": "a29a804c-424b-4eb0-9e90-64f08333695a",
+      "comment": "",
+      "command": "select",
+      "target": "id=peso",
+      "targets": [],
+      "value": "2kg"
+    }, {
+      "id": "00c3a4e5-ba98-4d97-a79e-4644a77b1fe8",
+      "comment": "",
+      "command": "select",
+      "target": "id=formato",
+      "targets": [],
+      "value": "Retangular"
+    }, {
+      "id": "5771f592-5713-4633-a7fb-138c8b8ee382",
+      "comment": "",
+      "command": "select",
+      "target": "id=massa",
+      "targets": [],
+      "value": "Chocolate"
+    }, {
+      "id": "c24d75ef-ebb1-4329-af7e-e468b22c4d4b",
+      "comment": "",
+      "command": "select",
+      "target": "id=recheio",
+      "targets": [],
+      "value": "Chocolate Branco"
+    }, {
+      "id": "b93b426a-a6c3-4614-af76-b0ee81e51406",
+      "comment": "",
+      "command": "select",
+      "target": "id=mistura",
+      "targets": [],
+      "value": "Canela"
+    }, {
+      "id": "5ac6c56f-608f-4fe0-bd04-0cba4e5c7460",
+      "comment": "",
+      "command": "type",
+      "target": "comment",
+      "targets": [],
+      "value": "Um bolo bom, por favor"
+    }, {
+      "id": "fa03cf02-56a9-4d97-a7aa-17e49d8ceb52",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartBtn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe6f2955-a220-4d1c-b7d5-4f35925e68dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ade3a618-0967-40f5-9e30-a57b719a271e",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "88cb160c-7c66-40e9-898b-4fa2af6626d7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c56c83dd-981e-4e3f-b5c7-563c3226c336"]
+  }],
+  "urls": ["https://cake4you-mas.netlify.app/"],
+  "plugins": []
+}

@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/ ">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para o registo */
+        /* CSS para o formulário de entrada/registro */
+        .form-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .form-container h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .form-container form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-container input[type="text"],
+            .form-container input[type="email"],
+            .form-container input[type="password"],
+            .form-container button[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .form-container button[type="submit"] {
+                background-color: #E39089;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+                .form-container button[type="submit"]:hover {
+                    background-color: #cc7b7e;
+                }
+
+        .form-container {
+            max-width: 400px; /* Define a largura máxima */
+            height: 500px;
+            margin: 100px auto; /* Centraliza na página */
+            padding: 20px; /* Adiciona algum preenchimento interno */
+            border: 1px solid #f8f8f8; /* Adiciona uma borda */
+            border-radius: 10px; /* Arredonda as bordas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+        }
+
+            .form-container h2 {
+                text-align: center; /* Centraliza o título */
+                margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+                color: #E39089; /* Cor do título */
+            }
+    </style>
+</head>
+<body>
+    <div style="height:100px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="Imagens/logotipo.jpeg" class="img-fluid" style="height:500px;" />
+            </div>
+            <div class="col-6">
+                <div class="form-container" style="height:500px; width:auto; margin-top:-10px;">
+                    <h2>Entrar ou Registrar</h2>
+                    <div style="height: 90%; display: flex; flex-direction: column; justify-content: space-around;">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email" style="margin-bottom:-50px;"><br>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Senha"><br>
+                        <button onclick="checkProfile()" type="submit" style="margin-bottom:-20px;">Entrar</button>
+                        <button onclick="mudarpag()" type="submit">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" style="height: 80px; border-bottom: 2px solid #f8f8f8;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Imagens/logotipo.jpeg" width="75px" height="70px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-user fa-lg"></i> Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list fa-lg"></i> Bolos Específicos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aniversario.html">Bolos de Aniversário</a></li>
+                                <li><a class="dropdown-item" href="casamento.html">Bolos de Casamentos</a></li>
+                                <li><a class="dropdown-item" href="batizado.html">Bolos de Batizado</a></li>
+                                <li><a class="dropdown-item" href="religiosos.html">Bolos para Ocasiões Religiosas</a></li>
+                                <li><a class="dropdown-item" href="natal.html">Bolos de Natal</a></li>
+                                <li><a class="dropdown-item" href="eventos.html">Bolos para Eventos Especiais</a></li>
+                                <li><a class="dropdown-item" href="personalizados.html">Bolos Personalizados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="outros.html">Outros Bolos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confeitarias.html"><i class="fa fa-birthday-cake fa-lg"></i> Confeitarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html"><i class="fa fa-heart fa-lg"></i> Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"><i class="fa fa-shopping-cart fa-lg"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <footer class="footer fixed-bottom">
+            <div class="bottom-bar">
+                <p>
+                    &copy; 2023 Cake4You - Todos os direitos reservados
+                </p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+        <script src="perfil.js"></script>
+</body>
+</html>
+
+
